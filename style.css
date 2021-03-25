@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+ h1{
+    font-family: 'Shadows Into Light', cursive;
+   font-size: 80px;
+   text-align: center;
+   
+ }
+
+ h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+   text-align: center;
+   
+ }
+
+ h5{
+    text-align: center;
+    color: rgb(255, 208, 80);
+    font-family: 'Shadows Into Light', cursive;
+ }
+
+.bottom {
+    font-family: "Open Sans";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+}
+.mainbox {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 80px;
+    
+}
+.mainbox:after {
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADo6OhNTU3s7Oz7+/umpqbU1NTKysrPz8/a2trf398fHx+Tk5Pw8PBGRkaDg4NUVFRycnKLi4ufn59eXl7AwMARERGwsLC5ubnDw8MoKCgyMjKbm5s8PDx7e3tkZGRsbGwZGRkxMsNnAAACXUlEQVR4nO3cyVICQRCEYYZF9mVEQFxQfP+HdAmVVA+cKkoq/+8qRlQG6+R0d6cDAAAAAAAAAAAAAAAAAAAAAAAAAMB/0O9mTxBr3M5eetvsKQLtmw9X2XOE2Tafqr5S774CVn0SR98Bm1X2LCHGp4DNbfYwEYYScNfPnibAZCcJ99nTBJjOir9Gp/cSsOIHafdBAj5mTxOgf5CA8+xpAiyWEnCdPU2ARU8CVvyqH7QS8Cl7mgCDjQS8zp4mwrMEPGYPE+EoAZ8H2dMEuJaAm4oBnyRgWzHgSgIuF9nTBFhLwEPFgHMJ+FDxgvBGAs4qNk9XEvClYsBbCbibZk8TYC8Bm0n2NAG2GnCYPU2AkQYcZ08TQIvRZpQ9TQAtRpuKt5kmGrBkMaoBKxajXQ1YshjV7v4me5oAC+3uSxaj2t1XLEYH2t2XLEa1u69YjHa0uy9ZjGp3X7IY1e5+kz1MBO3u2+xhImh338seJsKxekCttks4/LpsX53/l4vz46poff7xF0g6+sfsWWKcrvyG5x98keZGz6HB+9Dgs7Tg9+HyT419lL+W/E1j8LvU4NrC4PrQ4BrfoKcx6Nrq96UGnbfBfQuDe08G9w8N7gEb3Mc3WIthsJ7GYE2Uwbo2g7WJButLDdYIG6zzNlirb7DfwmDPjMG+J4O9awb7Dw32kBrsA66/l9tgP77BmQoG52IYnG1icD6NwRlDBudEGZz1ZXBe248atea3op6bWPQ5PDXFRd+H7/bFn8I34839rK15t+Zbv+4rFAAAAAAAAAAAAAAAAAAAAAAAAACAs14Bp3Qbz0qqHgUAAAAASUVORK5CYII=') no-repeat;
+    background-size: 32px;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    
+}
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    overflow: hidden;
+    transition: all ease 5s;
+}
+span {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+}
+.span1 {
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #fae423;
+    top: 120px;
+    left: 0;
+}
+.span2 {
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+    background-color: #e9c35b;
+    top: 120px;
+    right: 0;
+}
+.span3 {
+    clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+    background-color: #4d4b409c;
+    bottom: 0;
+    left: 120px;
+}
+.span4 {
+    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    background-color: #f8d71c;
+    top: 0;
+    left: 120px;
+}
+.box1 .span3 b {
+    transform: translate(-50%, -50%) rotate(-270deg);
+}
+.box1 .span1 b,
+.box2 .span1 b {
+    transform: translate(-50%, -50%) rotate(185deg);
+}
+.box2 .span3 b {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.box1 .span4 b,
+.box2 .span4 b {
+    transform: translate(-50%, -50%) rotate(-85deg);
+}
+span b {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-135deg);
+}
+.spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #0B0C09;
+    color: #fff;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+.spin:active {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+}
+.mainbox.animate:after {
+    animation: animateArrow 0.7s ease infinite;
+}
+@keyframes animateArrow {
+    50% {
+        right: -40px;
+    }
+}
+
+.drinkcard{
+    max-width: 220px;
+    padding: 1rem;
+  height: 19rem;
+    background-color: rgba(95, 99, 104, 0.11);
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    margin: 0 auto;
+    display: inline-block;
+     grid-gap: 1rem;
+    box-sizing: border-box;
+    font-size: small;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    }
+
+.responsive{
+    line-height: 0.8;
+}
+
+.card{
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  20px 20px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  border-radius: 9px;
+  border: 1px solid rgba(247, 238, 238, 0.575);
+  text-align: center;
+  padding: 40px 5%;
+  margin: 0 auto;
+  
+}
+
+img {
+    height: 140px;
+    width: auto;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+input {
+    width: 320px;
+    height: 37px;
+    background: rgba(212, 220, 226, 0.432);
+    border: 1px solid gray;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.container-fluid{
+    border: 1px solid rgba(0, 0, 0, 0.582);
+    border-radius: 2px;
+    /* background-color: rgba(245, 230, 146, 0.548); */
+}
+
