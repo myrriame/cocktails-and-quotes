@@ -1,4 +1,4 @@
-var API_key = 'fnwT7vX1ywr1DkhjR2hS9mQoA32Qz4M7'
+
 
 var button = document.getElementById('button-addon2')
 var firstDiv = document.getElementById('box1')
@@ -26,7 +26,7 @@ button.addEventListener("click", function (event) {
 
             var drinkCardDiv = document.createElement('div')
 
-            drinkCardDiv.className = 'drinkcard'
+            drinkCardDiv.className = 'drinkcard col-sm'
 
             var photo = document.createElement('img')
             photo.className = 'responsive';
@@ -64,7 +64,7 @@ button.addEventListener("click", function (event) {
         .then(data => addDrink(data))
         // unable to get .catch to work
         // .then(stuff => fetch('http://api.giphy.com/v1/gifs/search'))
-        .catch(err => aalert())
+        .catch(err => console.log('no drink found'))
 });
 
 
