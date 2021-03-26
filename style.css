@@ -13,10 +13,33 @@
    text-align: center;
    text-shadow: 2px 2px #3b39394d
    
-   
-   
  }
 
+ .collapsible {
+    background-color: #f4845f;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    border-radius: 3px;
+
+}
+.active,
+.collapsible:hover {
+    background-color: #fda84c;
+
+}
+.content {
+    padding: 0 21px;
+    display: none;
+    overflow: hidden;
+    background-color: #ffffff;
+
+} 
+ 
  h2{
     font-family: 'Shadows Into Light', cursive;
     font-size: 50px;
@@ -28,7 +51,10 @@
     text-align: center;
     color: rgb(255, 135, 80);
     font-family: 'Shadows Into Light', cursive;
+
  }
+
+/* wheel */
 
 .bottom {
     font-family: "Open Sans";
@@ -38,6 +64,7 @@
     height: 100vh;
     overflow: hidden;
     background-size: cover;
+
 }
 .mainbox {
     position: relative;
@@ -48,6 +75,7 @@
     font-size: 80px;
     
 }
+
 .mainbox:after {
     position: absolute;
     content: '';
@@ -59,8 +87,8 @@
     top: 50%;
     transform: translateY(-50%);
     
-    
 }
+
 .box {
     width: 100%;
     height: 100%;
@@ -70,63 +98,87 @@
     border: 10px solid #fff;
     overflow: hidden;
     transition: all ease 5s;
+
 }
+
 span {
     width: 50%;
     height: 50%;
     display: inline-block;
-    position: absolute;
+    position: absolute
+    
 }
+
 .span1 {
     clip-path: polygon(0 92%, 100% 50%, 0 8%);
     background-color: #f76e13;
     top: 120px;
     left: 0;
+
 }
+
 .span2 {
     clip-path: polygon(100% 92%, 0 50%, 100% 8%);
     background-color: #f38841;
     top: 120px;
     right: 0;
+
 }
+
 .span3 {
     clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
-    background-color: #f8ab06f3;
+    background-color: #f2b559;
     bottom: 0;
     left: 120px;
+
 }
+
 .span4 {
     clip-path: polygon(50% 100%, 92% 0, 8% 0);
-    background-color: #fad60c;
+    background-color: #f25c54;
     top: 0;
     left: 120px;
+
 }
+
 .box1 .span3 b {
     transform: translate(-50%, -50%) rotate(-270deg);
+
 }
+
 .box1 .span1 b,
 .box2 .span1 b {
     transform: translate(-50%, -50%) rotate(185deg);
+
 }
+
 .box2 .span3 b {
     transform: translate(-50%, -50%) rotate(90deg);
+
 }
+
 .box1 .span4 b,
 .box2 .span4 b {
     transform: translate(-50%, -50%) rotate(-85deg);
+
 }
+
 span b {
     font-size: 12px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
+
 .box2 {
     width: 100%;
     height: 100%;
     transform: rotate(-135deg);
+
 }
+
 .spin {
     position: absolute;
     top: 50%;
@@ -142,47 +194,53 @@ span b {
     font-weight: bold;
     font-size: 22px;
     cursor: pointer;
+
 }
+
 .spin:active {
     width: 70px;
     height: 70px;
     font-size: 20px;
+
 }
+
 .mainbox.animate:after {
     animation: animateArrow 0.7s ease infinite;
+
 }
+
 @keyframes animateArrow {
     50% {
         right: -40px;
     }
 }
 
+/* wheel */
+
 .drinkcard{
     max-width: 250px;
     padding: 10px;
-  max-height: 350px;
   vertical-align: top;
-    /* background-color: rgba(95, 99, 104, 0.11); */
-    /* border: 1px solid rgba(0, 0, 0, 0.404); */
     margin: 0 auto;
     display: inline-block;
-     /* grid-gap: 1rem; */
     box-sizing: border-box;
     font-size: 9px;
     letter-spacing: 1px;
-    /* border-radius: 2px; */
     overflow: hidden;
+
     }
 
 #drinkContainer{
     margin: 0 auto;
     text-align: center;
-    background-color: rgba(240, 141, 111, 0.062);
-    border-radius: 1px;
+    background-color: rgba(240, 141, 111, 0.144);
+    border-radius: 2px;
+   
 }
 
 .responsive{
-    line-height: 0.5;
+    line-height: 1.0;
+
 }
 
 .card{
@@ -196,6 +254,7 @@ span b {
   max-width: 450px;
   max-height: 700px;
   height:200px;
+
 }
 
 
@@ -205,13 +264,12 @@ img {
     width: auto;
     border-radius: 18px;
     padding: 1rem;
+
 }
 
 input {
-    width: 320px;
-    height: 37px;
-    background: rgba(212, 220, 226, 0.432);
-    border: 1px solid gray;
+    background: rgba(255, 255, 255, 0.432);
+    border: 1px solid rgb(102, 96, 96);
     border-radius: 4px;
     text-align: center;
 }
@@ -219,9 +277,9 @@ input {
 .container-fluid{
     border: 1px solid rgba(0, 0, 0, 0.582);
     border-radius: 2px;
-    /* background-color: rgba(245, 230, 146, 0.548); */
 }
 
+/* wheel */
 @media screen and (min-width: 200px) {
     .mainbox {
         position: relative;
@@ -271,13 +329,13 @@ input {
     }
     .span3 {
         clip-path: polygon(35% 0%, 0% 100%, 95% 100%);
-        background-color: #f8ab06f3;
+        background-color: #f2b559;
         bottom: 0;
         left: 50px;
     }
     .span4 {
         clip-path: polygon(50% 100%, 100% 0, 8% 0%);
-        background-color: #fad60c;
+        background-color: #f25c54;
         top: 0;
         left: 50px;
     }
@@ -393,13 +451,13 @@ input {
     }
     .span3 {
         clip-path: polygon(45% 0%, 0% 100%, 85% 100%);
-        background-color: #f8ab06f3;
+        background-color: #f2b559;
         bottom: 0;
         left: 75px;
     }
     .span4 {
         clip-path: polygon(45% 100%, 100% 0, 8% 0%);
-        background-color: #fad60c;
+        background-color: #f25c54;
         top: 0;
         left: 75px;
     }
@@ -514,13 +572,13 @@ input {
     }
     .span3 {
         clip-path: polygon(45% 0%, 0% 100%, 85% 100%);
-        background-color: #f8ab06f3;
+        background-color: #f2b559;
         bottom: 0;
         left: 100px;
     }
     .span4 {
         clip-path: polygon(50% 100%, 100% 0, 8% 0%);
-        background-color: #fad60c;
+        background-color: #f25c54;
         top: 0;
         left: 100px;
     }
@@ -636,13 +694,13 @@ input {
     }
     .span3 {
         clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
-        background-color: #f8ab06f3;
+        background-color: #f2b559;
         bottom: 0;
         left: 120px;
     }
     .span4 {
         clip-path: polygon(50% 100%, 92% 0, 8% 0);
-        background-color: #fad60c;
+        background-color: #f25c54;
         top: 0;
         left: 120px;
     }
@@ -708,3 +766,4 @@ input {
         }
     }
 }
+/* wheel */
