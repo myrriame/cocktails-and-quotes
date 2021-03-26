@@ -19,8 +19,11 @@
 </head>
 
 <body>
-    <h1>Cocktails & Quotes</h1>
-    <!-- <h5>RON SWANSON EDITION</h5> -->
+
+    <h1>Cocktails & Quotes
+        <img src="https://media.giphy.com/media/xUPGcMtyJpiEfl5wSA/giphy.gif" alt="floating ron swanson head"
+            style="display: inline;">
+    </h1>
 
     <br>
 
@@ -34,42 +37,38 @@
             </div>
         </div>
 
-        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="visibility: hidden;">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="visibility: hidden;" id="error">
             <strong>Woah!</strong> This drink name does not exist.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="errorclose">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
 
-        <br>
-
-
         <div id="drinkContainer"></div>
-
         <br>
-
         <div class="container">
             <div id="instructions">
                 <h2>How To Play:</h2>
                 <!-- instructions -->
-                <br>
-                <div class="collapse.show" id="toggle">
-                    <div class="container-fluid">
-                        <br>
-                        <p>Search the cocktail of your choice, mix it up, and get ready for some fun!</p>
-                        <p>then you take turns reading the quotes in your best Ron Swanson voice</p>
-                        <p>who ever laughs must spin the wheel and must do what ever the slot the arrow lands on says
-                        </p>
-                        <br>
-                    </div>
+
+                <!-- <div class="collapse.show" id="toggle"> -->
+                <div class="container-fluid">
+                    <br>
+                    <p>1. Search the cocktail of your choice, mix it up, and get ready for some fun!</p>
+                    <p>2. Next take turns reading the quotes in your best Ron Swanson voice</p>
+                    <p>3. Who ever laughs must spin the wheel and must do what ever the slot the arrow lands on says!
+                    </p>
+                    <p>Drink Responsibly :D</p>
+                    <br>
                 </div>
+                <!-- </div> -->
             </div>
         </div>
         <br>
 
         <h2>The Game:</h2>
 
-        <br>
+
 
         <div class="container-fluid">
 
@@ -77,7 +76,7 @@
 
             <div id="quotecard" class="card">
                 <div class="container">
-                    <p id="quote"></p>
+                    <p id="quote">Click Me!</p>
                 </div>
             </div>
 
@@ -98,13 +97,14 @@
                         <span class="span3"><b>You're safe</b></span>
                         <span class="span4"><b>Take 1 drink, and give 1 drink</b></span>
                     </div>
+
+                    <button class="spin" onclick="rotateFunction()">SPIN</button>
                 </div>
-                <button class="spin" onclick="rotateFunction()">SPIN</button>
+                <br>
             </div>
         </div>
-    </div>
-
-    <script src="/Users/myrriamed./DigitalCrafts/FrontEndProject/cocktails-and-quotes/script.js"></script>
+        <br><br>
+        <script src="/Users/myrriamed./DigitalCrafts/FrontEndProject/cocktails-and-quotes/script.js"></script>
 
 </body>
 

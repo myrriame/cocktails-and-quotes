@@ -11,6 +11,9 @@
     font-family: 'Shadows Into Light', cursive;
    font-size: 80px;
    text-align: center;
+   text-shadow: 2px 2px #3b39394d
+   
+   
    
  }
 
@@ -23,7 +26,7 @@
 
  h5{
     text-align: center;
-    color: rgb(255, 208, 80);
+    color: rgb(255, 135, 80);
     font-family: 'Shadows Into Light', cursive;
  }
 
@@ -155,39 +158,52 @@ span b {
 }
 
 .drinkcard{
-    max-width: 220px;
-    padding: 1rem;
-  height: 19rem;
-    background-color: rgba(95, 99, 104, 0.11);
-    border: 1px solid rgba(0, 0, 0, 0.404);
+    max-width: 250px;
+    padding: 10px;
+  max-height: 350px;
+  vertical-align: top;
+    /* background-color: rgba(95, 99, 104, 0.11); */
+    /* border: 1px solid rgba(0, 0, 0, 0.404); */
     margin: 0 auto;
     display: inline-block;
-     grid-gap: 1rem;
+     /* grid-gap: 1rem; */
     box-sizing: border-box;
-    font-size: small;
+    font-size: 9px;
     letter-spacing: 1px;
-    border-radius: 2px;
+    /* border-radius: 2px; */
+    overflow: hidden;
     }
 
+#drinkContainer{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(240, 141, 111, 0.062);
+    border-radius: 1px;
+}
+
 .responsive{
-    line-height: 0.8;
+    line-height: 0.5;
 }
 
 .card{
   -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
   box-shadow:  20px 20px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  border-radius: 9px;
+  border-radius: 4px;
   border: 1px solid rgba(247, 238, 238, 0.575);
   text-align: center;
   padding: 40px 5%;
   margin: 0 auto;
-  
+  max-width: 450px;
+  max-height: 700px;
+  height:200px;
 }
+
+
 
 img {
     height: 140px;
     width: auto;
-    border-radius: 4px;
+    border-radius: 18px;
     padding: 1rem;
 }
 
@@ -692,4 +708,3 @@ input {
         }
     }
 }
-
