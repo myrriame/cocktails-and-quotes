@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails & Quotes</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="style.css">
+        <!-- integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/Users/myrriamed./DigitalCrafts/FrontEndProject/cocktails-and-quotes/style.css">
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThOoFUWTao_bOt2UNihI6DxIPDINNbEiffwFSPzpcCOgzeR6Vq1ITy1BnZ1k92BU1Mweo&usqp=CAU">
+</head>
+
+<body>
+
+    <h1>Cocktails & Quotes
+        <img src="https://media.giphy.com/media/xUPGcMtyJpiEfl5wSA/giphy.gif" alt="floating ron swanson head"
+            style="display: inline;">
+    </h1>
+
+    <br>
+
+    <div class="container">
+
+        <div class="input-group mb-3" id="box1">
+            <input input type="text" class="form-control" placeholder="Search For A Drink"
+                aria-label="Search For A Drink" aria-describedby="button-addon2" class="center" id="search">
+            <div class="input-group-append">
+                <button class="btn btn-outline-dark" type="button" id="button-addon2">Search</button>
+            </div>
+        </div>
+
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="visibility: hidden;" id="error">
+            <strong>Woah!</strong> This drink name does not exist.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="errorclose">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div id="drinkContainer"></div>
+        <br>
+        <div class="container">
+            <div id="instructions">
+                <h2>How To Play:</h2>
+                <!-- instructions -->
+
+                <!-- <div class="collapse.show" id="toggle"> -->
+                <div class="container-fluid">
+                    <br>
+                    <p>1. Search the cocktail of your choice, mix it up, and get ready for some fun!</p>
+                    <p>2. Next take turns reading the quotes in your best Ron Swanson voice</p>
+                    <p>3. Who ever laughs must spin the wheel and must do what ever the slot the arrow lands on says!
+                    </p>
+                    <p>Drink Responsibly :D</p>
+                    <br>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <br>
+
+        <h2>The Game:</h2>
+
+
+
+        <div class="container-fluid">
+
+            <br>
+
+            <div id="quotecard" class="card">
+                <div class="container">
+                    <p id="quote">Click Me!</p>
+                </div>
+            </div>
+
+
+            <br>
+
+            <div id="mainbox" class="mainbox">
+                <div id="box" class="box">
+                    <div class="box1">
+                        <span class="span1"><b>Take 1 drink</b></span>
+                        <span class="span2"><b>Take 2 drinks</b></span>
+                        <span class="span3"><b>You're safe</b></span>
+                        <span class="span4"><b>Take 1 drink, and give 1 drink</b></span>
+                    </div>
+                    <div class="box2">
+                        <span class="span1"><b>Take 1 drink</b></span>
+                        <span class="span2"><b>Take 2 drinks</b></span>
+                        <span class="span3"><b>You're safe</b></span>
+                        <span class="span4"><b>Take 1 drink, and give 1 drink</b></span>
+                    </div>
+
+                    <button class="spin" onclick="rotateFunction()">SPIN</button>
+                </div>
+                <br>
+            </div>
+        </div>
+        <br><br>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
