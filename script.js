@@ -6,18 +6,44 @@ var drinkbox = document.getElementById('drinkContainer')
 
 alert('We do not support underage drinking, excessive drinking, binge drinking or any other unsafe drinking behavior. Always drink responsibly. Also DO NOT drink and drive. Enjoy!')
 
+// collapsible instructions
+
+var coll = document.getElementsByClassName("collapsible");
+
+for (let i = 0; i < coll.length; i++) {
+
+    coll[i].addEventListener("click", function () {
+
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
 var errorclose = document.getElementById('errorclose')
 
+// how to close error message that comes up when incorrect drink is typed in
+
 errorclose.addEventListener('click', function (event) {
+
     event.preventDefault();
-    document.getElementById('error').style.visibility = 'hidden'
+
+    document.getElementById('error').style.visibility = 'hidden';
 })
+
+// drink search button, places all the drinks with that name on the page
 
 button.addEventListener("click", function (event) {
 
     event.preventDefault();
 
     while (drinkContainer.firstChild) {
+
         drinkContainer.removeChild(drinkContainer.firstChild)
     }
 
@@ -25,7 +51,8 @@ button.addEventListener("click", function (event) {
     console.log(drinkName);
 
     var replaced = drinkName.split(' ').join('+');
-    // console.log(replaced);
+
+    // function that's called in the 2nd .then that adds the drink content to the page
 
     var addDrink = (data) => {
         var drinkVariations = data.drinks.length
@@ -79,7 +106,7 @@ button.addEventListener("click", function (event) {
         })
 });
 
-
+// this part is when the user clicks on card to get a new quote
 
 cardbutton = document.getElementById('quotecard')
 
@@ -106,6 +133,7 @@ cardbutton.addEventListener("click", function (event) {
         .catch(err => console.log('failed to generate quote'))
 });
 
+// function that makes the wheel spin
 
 function rotateFunction() {
     var min = 1024;
