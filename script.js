@@ -1,4 +1,4 @@
-var API_key = 'fnwT7vX1ywr1DkhjR2hS9mQoA32Qz4M7'
+
 
 var button = document.getElementById('button-addon2')
 var firstDiv = document.getElementById('box1')
@@ -6,10 +6,20 @@ var drinkbox = document.getElementById('drinkContainer')
 
 alert('We do not support underage drinking, excessive drinking, binge drinking or any other unsafe drinking behavior. Always drink responsibly. Also DO NOT drink and drive. Enjoy!')
 
+var errorclose = document.getElementById('errorclose')
+
+errorclose.addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('error').style.visibility = 'hidden'
+})
 
 button.addEventListener("click", function (event) {
 
     event.preventDefault();
+
+    while (drinkContainer.firstChild) {
+        drinkContainer.removeChild(drinkContainer.firstChild)
+    }
 
     var drinkName = document.getElementById("search").value;
     console.log(drinkName);
@@ -62,9 +72,11 @@ button.addEventListener("click", function (event) {
         .then(reply => reply.json())
         // .then(data => console.log(data)) to get url info
         .then(data => addDrink(data))
-        // unable to get .catch to work
-        // .then(stuff => fetch('http://api.giphy.com/v1/gifs/search'))
-        .catch(err => aalert())
+
+        .catch(err => {
+            console.log('no drink found')
+            document.getElementById('error').style.visibility = 'visible';
+        })
 });
 
 
@@ -90,8 +102,8 @@ cardbutton.addEventListener("click", function (event) {
         .then(reply => reply.json())
         // .then(data => console.log(data)) to get url info
         .then(data => addQuote(data))
-        // unable to get .catch to work
-        .catch(err => console.log('very libertarian'))
+
+        .catch(err => console.log('failed to generate quote'))
 });
 
 
