@@ -123,7 +123,7 @@ cardbutton.addEventListener("click", function (event) {
     }
 
 
-    fetch("http://ron-swanson-quotes.herokuapp.com/v2/quotes")
+    fetch("https://ron-swanson-quotes.herokuapp.com/v2/quotes")
 
         // .then(reply => console.log(reply)) used to check status
         .then(reply => reply.json())
